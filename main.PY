@@ -52,7 +52,17 @@ os.system('cls')
 """
 #EJ 4
 print("Ejercicio 4")
-
-
+may=0
+men=0
+ig=0
+for j in range(1,11):
+    numero=int(input(f"Ingrese el {j} número "))
+    if numero>15:
+        may=may+1
+    elif numero==15:
+        ig=ig+1
+    else:
+        men=men+1
+print(f"Mayores a 15: {may} Menores a 15:{men} Iguales a 15:{ig}")
 input("\033[1mPresione enter para continuar\033[0m")
 os.system('cls')
