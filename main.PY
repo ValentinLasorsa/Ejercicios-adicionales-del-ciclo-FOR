@@ -49,7 +49,7 @@ porDes=(des*100)/25
 print(f"Porcentaje de aprobados: {porAp}% Porcentaje de desaprobados: {porDes}%")
 input("\033[1mPresione enter para continuar\033[0m")
 os.system('cls')
-"""
+
 #EJ 4
 print("Ejercicio 4")
 may=0
@@ -65,4 +65,25 @@ for j in range(1,11):
         men=men+1
 print(f"Mayores a 15: {may} Menores a 15:{men} Iguales a 15:{ig}")
 input("\033[1mPresione enter para continuar\033[0m")
-os.system('cls')
+os.system('cls')    
+"""
+#EJ 5
+print("Ejercicio 5")
+sumaEdades=0
+sumaAlturas=0
+may35=0
+for r in range(1,16):
+    edad=int(input(f"Ingrese la {r} edad  "))
+    altura=int(input(f"Ingrese la {r} altura (en centímetros) "))
+    sumaEdades=sumaEdades+edad
+    sumaAlturas=sumaAlturas+altura
+    if edad>35:
+        may35=may35+1
+    if altura <160 and edad>40:
+        print(altura)
+print("Cantidad de personas mayores a 35 años:",may35)
+promA=sumaAlturas/15
+promE=sumaEdades/15
+print("Estatura promedio:",promA,"Edad promedio:",promE)
+input("\033[1mPresione enter para continuar\033[0m")
+os.system('cls')   
