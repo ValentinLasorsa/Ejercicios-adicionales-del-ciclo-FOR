@@ -87,7 +87,7 @@ promE=sumaEdades/15
 print("Estatura promedio:",promA,"Edad promedio:",promE)
 input("\033[1mPresione enter para continuar\033[0m")
 os.system('cls')   
-"""
+
 #EJ 6
 print("Ejercicio 6")
 numeroTabla=int(input("Ingrese un número "))
@@ -95,7 +95,7 @@ for h in range(1,18):
     print(numeroTabla*h)
 input("\033[1mPresione enter para continuar\033[0m")
 os.system('cls')   
-
+"""
 #EJ 7
 print("Ejercicio 7")
 
