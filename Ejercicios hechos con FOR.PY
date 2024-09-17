@@ -95,9 +95,73 @@ for h in range(1,18):
     print(numeroTabla*h)
 input("\033[1mPresione enter para continuar\033[0m")
 os.system('cls')   
-"""
+
 #EJ 7
 print("Ejercicio 7")
+contMayores=0
+contMenores=0
+porcMayores=0
+porcMenores=0
+for k in range(1,21):
+    edad=int(input(f"Ingrese la {k} edad de la persona "))
+    if edad>=18:
+        contMayores+=1
+    else:
+        contMenores+=1
+porcMayores=(contMayores*100)/20
+porcMenores=(contMenores*100)/20
+print("El porcentaje de mayores es del "+str(porcMayores)+"% y el de menores es del "+str(porcMenores)+"%")
+input("\033[1mPresione enter para continuar\033[0m")
+os.system('cls')   
 
+#EJ 8
+print("Ejercicio 8")
+numerosRuleta=0
+cantNumerosImpares=0
+cantNumerosPares=0
+cant20Docena=0
+numMax=0
+promedioPares=0
+for t in range (1,11):
+    numerosRuleta=int(input(f"Ingrese el {t} número "))
+    if numerosRuleta!=0:
+        if numerosRuleta%2==0:
+            cantNumerosPares+=1
+        else:
+            cantNumerosImpares+=1
+    else: 
+        print("Número 0!")
+    if numerosRuleta >=13 and numerosRuleta <=24:
+        cant20Docena+=1
+    if numerosRuleta >numMax:
+        numMax=numerosRuleta
+promedioPares=cantNumerosPares/10
+print("Cantidad de números impares:",cantNumerosImpares, " Promedio de números pares:",promedioPares)
+print("La cantidad de números la 20 docena es de:",cant20Docena)
+print("El número más alto fue:",numMax)
+input("\033[1mPresione enter para continuar\033[0m")
+os.system('cls')   
+
+#EJ 9
+print("Ejercicio 9")
+for q in range(1,21):
+    horas=int(input(f"Ingrese la cantidad de horas trabajadas del empleado {q} "))
+    tarifa=int(input(f"Ingrese la tarifa por hora del empleado {q} "))
+    salario=horas*tarifa
+    print("El salario que le corresponde es de $"+str(salario))
+input("\033[1mPresione enter para continuar\033[0m")
+os.system('cls')   
+"""
+#EJ 10
+print("Ejercicio 10")
+sumaPares=0
+sumaImpares=0
+for y in range(1,26):
+    num=int(input(f"Ingrese el {y} número "))
+    if num%2==0:
+        sumaPares=sumaPares+num
+    else:
+        sumaImpares=sumaImpares+num
+print("Sumatoria de: Pares=",sumaPares, " Impares=",sumaImpares)
 input("\033[1mPresione enter para continuar\033[0m")
 os.system('cls')   
