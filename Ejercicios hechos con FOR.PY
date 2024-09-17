@@ -1,6 +1,5 @@
 import os 
 #EJ 1
-"""
 print("Ejercicio 1")
 total=0
 for n in range (1,1000):
@@ -151,7 +150,7 @@ for q in range(1,21):
     print("El salario que le corresponde es de $"+str(salario))
 input("\033[1mPresione enter para continuar\033[0m")
 os.system('cls')   
-"""
+
 #EJ 10
 print("Ejercicio 10")
 sumaPares=0
