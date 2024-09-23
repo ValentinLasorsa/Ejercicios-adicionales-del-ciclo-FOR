@@ -162,5 +162,5 @@ for y in range(1,26):
     else:
         sumaImpares=sumaImpares+num
 print("Sumatoria de: Pares=",sumaPares, " Impares=",sumaImpares)
-input("\033[1mPresione enter para continuar\033[0m")
+input("\033[1mPresione enter para finalizar\033[0m")
 os.system('cls')   
